@@ -1,0 +1,170 @@
+.image-upload {
+  position: relative; /* 상대 위치 기준을 제공 */
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* 중앙 정렬 */
+  width: 100%;
+  height: 350px;
+}
+
+.image-preview {
+  flex-shrink: 0;
+  position: relative;
+}
+
+.preview-image {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  margin-right: 10px;
+  margin-left: 40px;
+}
+
+.upload-button {
+  position: absolute; /* 절대 위치 지정 */
+  top: 10px; /* 상단에서 10px */
+  right: 10px; /* 오른쪽에서 10px */
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+}
+
+.upload-button img {
+  width: 100%;
+  height: 100%;
+}
+
+.remove-button {
+  width: 70px;
+  height: 40px;
+  position: absolute; /* 부모 컨테이너를 기준으로 위치 설정 */
+  top: 10px; /* 상단에서 10px 떨어진 위치 */
+  right: 19px; /* 오른쪽에서 10px 떨어진 위치 */
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  padding: 5px 10px;
+  font-size: 20px;
+  cursor: pointer; /* 마우스 포인터를 손 모양으로 변경 */
+}
+
+.detailBox {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.detailBox input,
+.detailBox textarea {
+  background-color: transparent;
+  width: 100%;
+  border-radius: 20px;
+  font-size: 20px;
+  color: black;
+  padding-left: 30px;
+  padding-top: 15px;
+  box-sizing: border-box;
+  border: 1px solid black;
+  font-size: 40px;
+}
+
+.title {
+  height: 100px;
+  margin-bottom: 30px;
+}
+
+.content {
+  height: 600px;
+  resize: none;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+.title::placeholder,
+.content::placeholder {
+  font-size: 40px;
+}
+
+.holidayCheck {
+  color: black;
+  width: 90%;
+  height: 200px;
+  padding-left: 30px;
+  font-size: 35px;
+  margin-left: 20px;
+}
+
+.holidayCheck h3 {
+  text-align: left;
+  padding-left: 25px;
+  font-size: 40px;
+}
+.custom-checkbox {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  width: 35px; /* 체크박스 너비 */
+  height: 35px; /* 체크박스 높이 */
+  cursor: pointer;
+  position: relative;
+  outline: none;
+  margin-right: 4px; /* 체크박스와 요일 사이의 간격 */
+}
+
+.custom-checkbox:checked {
+  border: 1px solid #007bff;
+}
+
+/* .custom-checkbox:checked::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 6px; /* 체크된 표시의 너비 */
+/* height: 6px; 체크된 표시의 높이 */
+/* background-color: #007bff;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+.holidayCheck label {
+  display: flex;
+  align-items: center;
+}
+
+/* 시간 */
+
+.timecontainer {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+  color: black;
+}
+
+.time-inputs {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-left: 45px;
+}
+
+.label {
+  margin-bottom: 1px;
+  font-size: 40px;
+}
+
+.timeinput {
+  background-color: white;
+  width: 98%; /* 인풋 요소의 너비를 컨테이너의 너비에 맞추기 */
+  padding: 10px;
+  box-sizing: border-box;
+  border: 2px solid black; /* 테두리 색상 설정 */
+  border-radius: 10px;
+  color: black; /* 글자 색상 설정 */
+  font-size: 40px;
+}
+
+.result {
+  margin-top: 20px;
+  margin-left: 40px;
+  font-size: 40px;
+}
